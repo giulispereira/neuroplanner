@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #182132;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+.imgLogo{
+    width: 3rem;
+}
+.logo{
+    display: flex;
+    padding: 1.5rem 2rem 0rem 2rem;
+}
+.marca{
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    font-family: "Inter", sans-serif;
+}
+.neuro{
+    color: #30BBDE;
+}
+.perguntas{
+    background-color: #182132;
+    padding: 1.5rem 17rem 3rem 17rem;
+}
+.card{
+    background-color: #202D40;
+    padding: 1rem 3rem 2rem 3rem;
+    border-radius: 2rem;
+}
+.marcacao{
+    color: #6E8FCE;
+    font-size: 0.7rem;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 0.7rem;
+}
+.enunciado{
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.opcao1{
+    background-color: #273346;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.opcao2{
+    background-color: #273346;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem;
+}
+input {
+    position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+}
+.check-label{
+    display: inline-block;
+            border-radius: 5px;
+            cursor: pointer; /* Indica que é clicável */
+            user-select: none; /* Impede a seleção de texto acidental */
+            transition: background-color 0.2s, border-color 0.2s;
+}
+.foradocard{
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem 0 0 0;
+}
+
+.dica{
+    padding: 0 0 0 0.2rem;
+}
+.titulo-dica{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.dica-dica{
+    background-color: #273346;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: #87BEFF;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.botao1{
+    background-color: #182132;
+    color: #ffffff;
+    border: 0.8rem solid #182132;
+    border-radius: 2rem;
+    padding: 0 0.8rem 0 0.8rem;
+    font-size: 0.9rem;
+}
+.botao1:hover{
+    background-color: #1b2537;
+    border: 0.8rem solid #1b2537;
+}
