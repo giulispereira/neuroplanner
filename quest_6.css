@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #182132;
+    background-image: url(img/fundodesktop2\ 2.png);
     color: #ffffff;
     font-family: "Inter", sans-serif;
 }
@@ -20,6 +20,9 @@ body{
     font-size: 1.6rem;
     padding: 0.3rem;
     font-family: "Inter", sans-serif;
+}
+.step-indicator{
+    color: #30BBDE;
 }
 .neuro{
     color: #30BBDE;

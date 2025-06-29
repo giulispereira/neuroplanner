@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+     font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.page-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/fundodesktop2\ 2.png');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.page-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.central-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+}
+
+.main-text-group {
+    margin-bottom: 40px;
+}
+
+.main-heading {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    line-height: 0.7rem;
+    font-weight: lighter;
+}
+
+.sub-heading {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #30BBDE;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.info-text {
+    font-size: 1.2em;
+    color: #CBD5E0;
+}
+
+.start-button {
+    padding: 15px 40px;
+    background-color: #1A202C;
+    border: 2px solid #30BBDE;
+    color: #30BBDE;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover {
+    background-color: #35bbdd;
+    color: #1A202C;
+    transform: translateY(-2px);
+}
+
+.bottom-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-arrow {
+    font-size: 3em;
+    color: #FFFFFF;
+    cursor: pointer;
+    user-select: none;
+    line-height: 1;
+}
+
+.pagination-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #A0AEC0;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.dot.active {
+    background-color: #30BBDE;
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    header, .bottom-navigation {
+        padding: 20px 40px;
+    }
+
+    .main-heading, .sub-heading {
+        font-size: 2.2em;
+    }
+
+    .info-text {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    header, .bottom-navigation {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .main-heading, .sub-heading {
+        font-size: 1.8em;
+    }
+
+    .info-text {
+        font-size: 1em;
+    }
+
+    .start-button {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+    .nav-arrow {
+        font-size: 2.5em;
+    }
+
+    .pagination-dots {
+        gap: 8px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .main-heading, .sub-heading {
+        font-size: 1.5em;
+    }
+
+    .info-text {
+        font-size: 0.9em;
+    }
+
+    .start-button {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+
+    .nav-arrow {
+        font-size: 2em;
+    }
+}

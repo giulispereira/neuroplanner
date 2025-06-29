@@ -3,15 +3,175 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(img/fundodesktopp.png);
+body {
+     font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voltar{
+    display: flex;
+    justify-content: left;
+    padding: 1.7rem 110rem 0 0rem;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.neuro{
+    color: #30BBDE;
+}
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/fundodesktopp.png');
     background-size: cover;
-    background-position: inherit;
-    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
 }
 
-h1{
-    font-weight: extr;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 80px;
+    box-sizing: border-box;
+}
+
+.welcome-message {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting {
+    font-size: 3.8em;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+.app-title {
+    font-size: 2.5em;
+    font-weight: 700;
     color: #ffffff;
-    font-family: "Inter", sans-serif;
+    line-height: 1rem;
+}
+
+.bottom-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.step-indicator {
+    font-size: 0.7rem;
+    color: #A0AEC0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-dots {
+    display: flex;
+    gap: 10px;
+    padding: 0 3rem 0 4.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #A0AEC0;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.dot.active {
+    background-color: #63B3ED;
+    opacity: 1;
+}
+
+.nav-arrow {
+    font-size: 3em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 30px;
+    }
+
+    .greeting {
+        font-size: 2em;
+    }
+
+    .app-title {
+        font-size: 2.5em;
+    }
+
+    .bottom-navigation {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-arrow {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .greeting {
+        font-size: 1.5em;
+    }
+
+    .app-title {
+        font-size: 2em;
+    }
+
+    .step-indicator {
+        font-size: 0.9em;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .nav-arrow {
+        font-size: 2em;
+        right: 20px;
+        bottom: 20px;
+    }
 }

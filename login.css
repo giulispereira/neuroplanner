@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #1A202C;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.logo img {
+    width: 3rem; 
+    margin-right: 10px;
+}
+.neuro{
+    color: #30BBDE;
+}
+.loguete{
+    font-size: 2rem;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 50px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.main-brain-icon {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.app-name {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 18px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #202D40;
+    color: #FFFFFF;
+    font-size: 1em;
+    outline: none;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #A0AEC0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #A0AEC0;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #27a1c0;
+}
+
+.forgot-password {
+    color: #33C6EB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #27a1c0;
+}
+
+.login-button {
+    font-weight: lighter;
+    width: 100%;
+    padding: 15px;
+    background-color: #2A5265;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #254657;
+    transform: translateY(-2px);
+}
+
+.signup-prompt {
+    margin-top: 40px;
+    font-size: 0.95em;
+    color: #A0AEC0;
+}
+
+.signup-link {
+    color: #63B3ED;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+    color: #4299E1;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .login-container {
+        padding: 40px 30px;
+        margin: 20px;
+    }
+
+    .app-name {
+        font-size: 2em;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .options {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .main-brain-icon {
+        width: 100px;
+    }
+
+    .app-name {
+        font-size: 1.8em;
+    }
+
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    .login-button {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    .signup-prompt {
+        font-size: 0.85em;
+    }
+}

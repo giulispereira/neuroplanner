@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+        --dark-blue: #1A202C;
+        --light-blue: #30BBDE;
+        --white: #FFFFFF;
+        --gray-text: #dee5ec;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: var(--dark-blue);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px 80px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 3rem; 
+            margin-right: 10px;
+        }
+        .loguete{
+            font-size: 2rem;
+            padding: 1rem 0 0 0 ;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 80px;
+            gap: 50px;
+            flex-wrap: wrap; 
+        }
+
+        .content-left {
+            display: flex;
+            max-width: 550px;
+            text-align: left;
+            margin-bottom: 50px; 
+        }
+
+        h1 {
+            font-size: 3.5em; 
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h1 span {
+            color: #30BBDE;
+        }
+
+        p {
+            font-size: 1.1rem; 
+            line-height: 1.6;
+            color: #dee5ec;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button.secondary {
+            background-color: #202D40;
+            border: 2px solid #202D40;
+            color: #ffffff;
+        }
+
+        .button.secondary:hover {
+            background-color: #26354b;
+            transform: translateY(-2px);
+        }
+
+        .button.primary {
+            background-color: #30BBDE;
+            color: var(--dark-blue);
+            border: none;
+        }
+
+        .button.primary:hover {
+            background-color: #25a1c0; 
+            transform: translateY(-2px);
+        }
+
+        .cta-buttons span {
+            color: var(--white);
+            font-size: 1.1em;
+            margin: 0 10px;
+        }
+
+        .illustration-right {
+            max-width: 500px;
+            height: auto;
+            
+            background-image: url('https://via.placeholder.com/500x400/63B3ED/1A202C?text=Ilustracao'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 400px; 
+            flex-shrink: 0; 
+        }
+
+        footer {
+            margin-top: auto; 
+            padding: 2rem;
+            text-align: center;
+        }
+
+ 
+        .ou{
+            font-weight: lighter;
+        }
+        .texto{
+            font-weight: lighter;
+        }

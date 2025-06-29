@@ -1,81 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
     background-color: #182132;
-    color: #ffffff;
-    font-family: "Inter", sans-serif;
-}
-.imgLogo{
-    width: 3rem;
-}
-.logo{
-    display: flex;
-    padding: 1.5rem 2rem 0rem 2rem;
-}
-.marca{
-    font-size: 1.6rem;
-    padding: 0.3rem;
-    font-family: "Inter", sans-serif;
-}
-.neuro{
-    color: #30BBDE;
-}
-.perguntas{
-    background-color: #182132;
-    padding: 1.5rem 17rem 3rem 17rem;
-}
-.card{
-    background-color: #202D40;
-    padding: 1rem 3rem 2rem 3rem;
-    border-radius: 2rem;
-}
-.marcacao{
-    color: #6E8FCE;
-    font-size: 0.7rem;
-    font-family: "Inter", sans-serif;
-    padding-bottom: 0.7rem;
-}
-.enunciado{
-    font-family: "Inter", sans-serif;
-    font-weight: normal;
-    padding-bottom: 1.5rem;
+    color: #e0e6ed;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    min-height: 100vh;
 }
-.opcao1{
-    background-color: #273346;
-    border-radius: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 1rem 1rem 1rem 1rem;
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background-color: #202D40;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.opcao2{
-    background-color: #273346;
-    border-radius: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 1rem 1rem 1rem;
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
-input {
-    position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
+
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: #90cdf4;
 }
-.check-label{
-    display: inline-block;
-            border-radius: 5px;
-            cursor: pointer; /* Indica que é clicável */
-            user-select: none; /* Impede a seleção de texto acidental */
-            transition: background-color 0.2s, border-color 0.2s;
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-content {
+    padding: 0 20px;
+}
+
+.step-indicator {
+    font-size: 16px;
+    color: #cbd5e0;
+    margin-bottom: 10px;
+}
+
+.question-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.options-container {
+    margin-bottom: 40px;
+}
+
+.option-card {
+    background-color: #2d3748;
+    border-radius: 10px;
+    padding: 18px 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.option-card:hover {
+    background-color: #4a5568;
+}
+
+.option-card p {
+    margin: 0;
+    font-size: 18px;
+    color: #edf2f7;
 }
 .foradocard{
     display: flex;
