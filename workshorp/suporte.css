@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #182132;
+}
+
+.cab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+     display: flex;
+    align-items: center;
+}
+
+.cubo{
+    
+}
